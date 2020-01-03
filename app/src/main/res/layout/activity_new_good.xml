@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96B996"
+    tools:context=".activity_new_good">
+
+
+    <EditText
+        android:id="@+id/new_good_name"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:background="#EEE4D9D9"
+        android:ems="10"
+        android:hint="商品名稱"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/new_good"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/new_good"
+        app:layout_constraintTop_toBottomOf="@+id/new_good" />
+
+    <EditText
+        android:id="@+id/new_good_price"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:autoText="false"
+        android:background="#EEE4D9D9"
+        android:ems="10"
+        android:hint="商品金額"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/new_good_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/new_good_name"
+        app:layout_constraintTop_toBottomOf="@+id/new_good_name" />
+
+    <TextView
+        android:id="@+id/new_good"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="商品上架"
+        android:textAlignment="center"
+        android:textSize="16pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/btn_style"
+        android:text="確定"
+        app:layout_constraintEnd_toEndOf="@+id/new_good_price"
+        app:layout_constraintStart_toStartOf="@+id/new_good_price"
+        app:layout_constraintTop_toBottomOf="@+id/new_good_price" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96B996"
+    tools:context=".activity_new_event">
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/btn_style"
+        android:text="確定"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/event_date" />
+
+    <EditText
+        android:id="@+id/event_name"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:background="#EEE4D9D9"
+        android:ems="10"
+        android:hint="活動名稱"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/textview6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/textview6"
+        app:layout_constraintTop_toBottomOf="@id/textview6" />
+
+    <EditText
+        android:id="@+id/event_date"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:autoText="false"
+        android:background="#EEE4D9D9"
+        android:ems="10"
+        android:hint="活動日期(eg:2020-1-1)"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@id/event_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/event_name"
+        app:layout_constraintTop_toBottomOf="@id/event_name" />
+
+    <EditText
+        android:id="@+id/event_m"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:autoText="false"
+        android:background="#EEE4D9D9"
+        android:ems="10"
+        android:hint="紅包金額"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/event_date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/event_date"
+        app:layout_constraintTop_toBottomOf="@+id/event_date" />
+
+    <TextView
+        android:id="@+id/textview6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="活動上架"
+        android:textAlignment="center"
+        android:textSize="16pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

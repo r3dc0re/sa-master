@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".activity_good_select"></activity>
+        <activity android:name=".activity_redcash_set" />
+        <activity android:name=".activity_event_redcash" />
+        <activity android:name=".activity_good_sell" />
+        <activity android:name=".activity_new_good" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity android:name=".main_page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".my_good" />
+        <activity android:name=".my_event" />
+        <activity android:name=".EG_selection" />
+        <activity android:name=".activity_new_event" />
+        <activity android:name=".buy_record" />
+        <activity
+            android:name=".show_QR_code"
+            android:screenOrientation="portrait" />
+        <activity android:name=".set_goods_money" />
+        <activity android:name=".activity_event" />
+        <activity android:name=".login" />
+        <activity android:name=".first_choose" />
+        <activity android:name=".register" />
+    </application>
+
+</manifest>

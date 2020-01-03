@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "702497511045",
+    "firebase_url": "https://sa-elder.firebaseio.com",
+    "project_id": "sa-elder",
+    "storage_bucket": "sa-elder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702497511045:android:e09528684d9dce72f83bec",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702497511045-oq6ku2ihgqoj3ap36en9k0l0sbkk1btm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBmdl21qs4TL3pB_i6nfAjXog--g23v2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702497511045-oq6ku2ihgqoj3ap36en9k0l0sbkk1btm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
